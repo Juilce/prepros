@@ -4,26 +4,60 @@
     background-color: #00B6B6;
     min-height: 700px;
     max-width: 1500px;
+
+
 }
 .info{
+    @include _768{
+        flex-direction: column;
+    }
     &__image{
         margin-left: 165px;
-        
-        box-shadow: none;
+        width: 565px;
+        height: 565px;
+       
+        @include _1200{
+            width: inherit;
+            height: inherit;
+            margin: 0 auto;
+        }
+        @include _375{
+            width: inherit;
+            height: inherit;
+            margin: 0 auto;
+        }
     }
     &__down{
         max-width: 365px;
         margin-left: 85px;
         color: #ffffff;
+        
+        @include _768{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
     }
+}
+.image__berry{
+    width: 100%;
+    height: auto;
 }
 .text2{
     &__label{
-        font-size: 60px;
+        font-size: rem-calc(60px);
         font-weight: 700;
+        
+        @include _768{
+            font-size: rem-calc(30px);
+        }
     }
     &__t{
-        font-size: 20px;
+        font-size: rem-calc(20px);
         margin: 15px 0px 20px;
+       
+        @include _768{
+            font-size: rem-calc(13px);
+        }
     }
 }
