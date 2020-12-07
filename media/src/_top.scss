@@ -29,11 +29,10 @@
             font-size: rem-calc(30px);
         }
         @include _768{
-            margin-left: 110px;
-        };
-        @include _375{
-            margin-left: 30px;
+            width: 50%;
+            margin-left: 50px;
         }
+        
     }
 }
 .nav{
@@ -117,13 +116,12 @@
         @include _768{
             width: 50%;
             margin-top: 200px;
-            width: 50%;
-            margin-left: -10px;
+            margin-left: -20px;
         }
         @include _375{
             width: 50%;
             margin-top: 200px;
-            margin-left: -100px;
+            margin-left: -120px;
         }
     }
 }
