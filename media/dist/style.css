@@ -334,7 +334,7 @@
 @media screen and (max-width: 400px) {
   .pictures {
     transform: scale(0.6);
-    margin-bottom: -120px;
+    margin-bottom: -90px;
   }
 
   .top {
