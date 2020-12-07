@@ -268,7 +268,8 @@
   justify-content: center;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  padding-top: 5%;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 .top {
@@ -365,8 +366,8 @@ button {
   justify-content: center;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
-  padding-top: 4%;
-  margin-top: -3.6%;
+  padding-top: 3%;
+  margin-top: -3%;
   margin-bottom: 50px;
 }
 
@@ -380,6 +381,18 @@ button {
   font-weight: 700;
   margin-bottom: 4%;
 }
+@media screen and (max-width: 768px) {
+  .head h1 {
+    font-size: 45px;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .head h1 {
+    font-size: 35px;
+    padding-bottom: 5%;
+  }
+}
 .head p {
   max-width: 350px;
   margin: 0 auto;
@@ -387,15 +400,52 @@ button {
   margin-top: -30px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .head p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .head p {
+    font-size: 12px;
+  }
+}
 
 .middle {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .middle {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 .forma__add {
   border: none;
   max-width: 500px;
+  position: relative;
+}
+.forma__send {
+  color: #ffffff;
+  background-color: #336699;
+  padding: 5px 20px;
+  position: absolute;
+  left: 520px;
+}
+@media screen and (max-width: 768px) {
+  .forma__send {
+    position: absolute;
+    left: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .forma__send {
+    position: absolute;
+    left: 15px;
+  }
 }
 
 .inputs {
@@ -412,36 +462,75 @@ button {
   background-color: #00cccc;
   border-left: 4px solid #336699;
 }
+@media screen and (max-width: 768px) {
+  .inputs {
+    width: inherit;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .inputs {
+    width: inherit;
+    height: 30px;
+  }
+}
 
-textarea {
+.text {
   min-height: 200px;
+}
+@media screen and (max-width: 768px) {
+  .text {
+    min-height: 100px;
+  }
 }
 
 ::placeholder {
   font-size: 20px;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  ::placeholder {
+    font-size: 15px;
+  }
+}
 
 option {
   font-size: 20px;
 }
-
-.send {
-  color: #ffffff;
-  background-color: #336699;
-  padding: 5px 20px;
-  margin-left: 520px;
-  margin-top: -100px;
+@media screen and (max-width: 768px) {
+  option {
+    font-size: 15px;
+  }
 }
 
 .info {
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .info {
+    font-size: 15px;
+    width: 90%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .info {
+    font-size: 12px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
 }
 .info h2 {
   text-transform: uppercase;
   margin-bottom: -15px;
   font-size: 18px;
   font-weight: 700;
+}
+@media screen and (max-width: 375px) {
+  .info h2 {
+    font-size: 15px;
+  }
 }
 
 .foot {
@@ -456,9 +545,28 @@ option {
   justify-content: space-around;
   color: #ededed;
 }
+@media screen and (max-width: 375px) {
+  .foot__info {
+    font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .foot__info h2 {
   font-family: "Pacifico", cursive;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .foot__info h2 {
+    margin-left: 3%;
+    margin-right: 7%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .foot__info h2 {
+    margin-left: 3%;
+    margin-right: 7%;
+  }
 }
 .foot__span {
   color: #ff3366;
