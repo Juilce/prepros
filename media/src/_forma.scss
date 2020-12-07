@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.form{
+    background-image: url(image/12_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.contain{
+    max-width: 990px;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 3%;
+    margin-top: -3%;
+    margin-bottom: 50px;
+
+}
+.head{
+    margin: 0 auto;
+    text-align: center;
+    color: #333333;
+    
+    &__title{
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 4%;
+    @include _768{
+        font-size: 45px;
+        padding-bottom: 5%;
+    }
+    @include _375{
+        font-size: 35px;
+        padding-bottom: 5%;
+    }
+    }
+    &__text{
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 17px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    @include _768{
+        font-size: 15px;
+    }
+    @include _375{
+        font-size: 12px;
+    }
+    }
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+    
+    @include _768{
+        flex-direction: column;  
+            width: 100%;
+           margin: 0 auto;
+        
+    }
+}
+.forma{
+    &__add{
+    border: none;
+    max-width: 500px;
+    position: relative;
+    }
+    &__send{
+        color: #ffffff;
+        background-color: #336699;
+        padding: 5px 20px;
+        position: absolute;
+        left: 520px;
+        
+        @include _768{
+           position: absolute;
+           left: 300px;
+         }
+         @include _375{
+            position: absolute;
+            left: 15px;
+          }
+    }
+}
+.inputs{
+    margin: 5px;
+    height: 50px;
+    background-color: #66cccc;
+    color: #ffffff;
+    border: none;
+    width: 460px;
+    padding-left: 40px;
+    font-size: 20px;
+    &:hover{
+    background-color: #00cccc;
+    border-left: 4px solid #336699;
+    }
+    
+    @include _768{
+        width: inherit;
+        height: 30px;
+        
+    }
+    @include _375{
+        width: inherit;
+        height: 30px;      
+    }
+}
+
+.text{
+    min-height: 200px;
+@include _768{
+    min-height: 100px;   
+ }
+}
+
+::placeholder{
+    font-size: 20px;
+    color: #ffffff;
+    
+    @include _768{
+       font-size: 15px;
+    }
+}
+option{
+    font-size: 20px;
+    
+    @include _768{
+        font-size: 15px;      
+     }
+}
+
+.info{
+    color: #333333;
+    @include _768{
+        font-size: 15px;
+        width: 90%;
+        margin-top: 5%;
+       }
+    @include _375{
+        font-size: 12px;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+       }
+    h2{
+    text-transform: uppercase;
+    margin-bottom: -15px;
+    font-size: 18px;
+    font-weight: 700;
+    @include _375{
+        font-size: 15px;
+       }
+    }
+}
+.foot{
+    height: 90px;
+    background-color: #333333;
+    margin: 0 auto;
+
+    &__info{
+    display: flex;
+    max-width: 1175px;
+    margin: 0 auto;
+    justify-content: space-around;
+    color: #ededed;
+    @include _375{
+        font-size: 12px;
+        width: 90%;
+        margin: 0 auto;
+       }
+    }
+    &__info h2{
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    @include _768{
+        margin-left: 3%;
+        margin-right: 7%;
+       }
+    @include _375{
+        margin-left: 3%;
+        margin-right: 7%;
+       }
+    }
+    &__span{
+        color: #ff3366;
+        font-size: 15px;
+    }
+}

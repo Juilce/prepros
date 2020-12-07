@@ -3,11 +3,9 @@
     align-items: center;
     background-color: #00B6B6;
     min-height: 700px;
-   
-
-
+    max-width: 1500px;
 }
-.info{
+.info1{
     @include _768{
         flex-direction: column;
     }
@@ -44,6 +42,7 @@
     height: auto;
 }
 .text2{
+    margin-bottom: 10%;
     &__label{
         font-size: rem-calc(60px);
         font-weight: 700;

@@ -5,6 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .main {
   margin: 0 auto;
+}
+
+.cahee {
+  margin: 0 auto;
   max-height: 1700px;
 }
 
@@ -39,7 +43,7 @@
 @media screen and (max-width: 768px) {
   .header__logo {
     width: 50%;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
@@ -112,22 +116,22 @@
     font-size: 0.75rem;
   }
 }
-.info {
+.info1 {
   font-family: "Raleway", sans-serif;
 }
-.info__top {
+.info1__top {
   max-width: 365px;
   margin-left: 165px;
 }
 @media screen and (max-width: 768px) {
-  .info__top {
+  .info1__top {
     width: 50%;
     margin-top: 200px;
     margin-left: -20px;
   }
 }
 @media screen and (max-width: 375px) {
-  .info__top {
+  .info1__top {
     width: 50%;
     margin-top: 200px;
     margin-left: -130px;
@@ -191,39 +195,40 @@
   align-items: center;
   background-color: #00B6B6;
   min-height: 700px;
+  max-width: 1500px;
 }
 
 @media screen and (max-width: 768px) {
-  .info {
+  .info1 {
     flex-direction: column;
   }
 }
-.info__image {
+.info1__image {
   margin-left: 165px;
   width: 565px;
   height: 565px;
 }
 @media screen and (max-width: 1200px) {
-  .info__image {
+  .info1__image {
     width: inherit;
     height: inherit;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 375px) {
-  .info__image {
+  .info1__image {
     width: inherit;
     height: inherit;
     margin: 0 auto;
   }
 }
-.info__down {
+.info1__down {
   max-width: 365px;
   margin-left: 85px;
   color: #ffffff;
 }
 @media screen and (max-width: 768px) {
-  .info__down {
+  .info1__down {
     width: 50%;
     margin: 0 auto;
     margin-top: 50px;
@@ -235,6 +240,9 @@
   height: auto;
 }
 
+.text2 {
+  margin-bottom: 10%;
+}
 .text2__label {
   font-size: 3.75rem;
   font-weight: 700;
@@ -336,8 +344,7 @@ h1 {
   padding: 2px;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
-span {
+.data__numb {
   font-size: 30px;
 }
 
@@ -376,24 +383,24 @@ button {
   text-align: center;
   color: #333333;
 }
-.head h1 {
+.head__title {
   font-size: 80px;
   font-weight: 700;
   margin-bottom: 4%;
 }
 @media screen and (max-width: 768px) {
-  .head h1 {
+  .head__title {
     font-size: 45px;
     padding-bottom: 5%;
   }
 }
 @media screen and (max-width: 375px) {
-  .head h1 {
+  .head__title {
     font-size: 35px;
     padding-bottom: 5%;
   }
 }
-.head p {
+.head__text {
   max-width: 350px;
   margin: 0 auto;
   font-size: 17px;
@@ -401,12 +408,12 @@ button {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
-  .head p {
+  .head__text {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 375px) {
-  .head p {
+  .head__text {
     font-size: 12px;
   }
 }
