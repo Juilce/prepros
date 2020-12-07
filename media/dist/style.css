@@ -141,6 +141,7 @@
 .first {
   background: url(image/11_1back.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 1000px;
   display: flex;
   align-items: center;
