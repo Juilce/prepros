@@ -1,0 +1,29 @@
+.second{
+    display: flex;
+    align-items: center;
+    background-color: #00B6B6;
+    min-height: 700px;
+    max-width: 1500px;
+}
+.info{
+    &__image{
+        margin-left: 165px;
+        
+        box-shadow: none;
+    }
+    &__down{
+        max-width: 365px;
+        margin-left: 85px;
+        color: #ffffff;
+    }
+}
+.text2{
+    &__label{
+        font-size: 60px;
+        font-weight: 700;
+    }
+    &__t{
+        font-size: 20px;
+        margin: 15px 0px 20px;
+    }
+}

@@ -1,0 +1,42 @@
+@mixin lgradient($color, $size, $radius: 0) {
+    background: 
+    linear-gradient(to right, $color $size, transparent $size) 0 0,
+    linear-gradient(to right, $color $size, transparent $size) 0 100%,
+    linear-gradient(to left, $color $size, transparent $size) 100% 0,
+    linear-gradient(to left, $color $size, transparent $size) 100% 100%,
+    linear-gradient(to bottom, $color $size, transparent $size) 0 0,
+    linear-gradient(to bottom, $color $size, transparent $size) 0 100%,
+    linear-gradient(to top, $color $size, transparent $size) 100% 0,
+    linear-gradient(to top, $color $size, transparent $size) 100% 100%;
+    
+    @if $radius != 0 {
+      border-radius: $radius;
+    } @else  {
+        border-radius: 10px;
+    }
+  }
+
+  @mixin _375{
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  }
+  @mixin _768{
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin _992{
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @mixin _1200{
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @function rem-calc($font-size : 0){
+    $remSize: $font-size / $baseFontSize;
+    @return #{$remSize}rem;
+  }

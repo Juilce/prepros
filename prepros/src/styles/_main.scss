@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.main{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    
+    @include _768{
+        flex-direction: column;
+    }
+
+    &__photo{
+        margin: 0 auto;
+        width: 388px;
+        height: 388px;
+        border: 1px solid $secondColor;
+
+        @include _375{
+            width: inherit;
+            height: inherit;
+        }
+    }
+    &__info{
+        margin: 0 auto;
+        text-align: center;
+        width: 420px;
+
+        @include _768{
+            width: inherit;
+        }
+
+    }
+    &__separator{
+        @extend .sep;
+        &:before{
+            height: 500px;
+            margin-top: -70px;
+
+            @include _768{
+                transform: rotate(90deg);
+                height: 100px;
+                margin-top: 0;
+            }
+        }
+    }
+    &__prev,
+    &__next{
+        font-size: rem-calc(30px);
+        &:hover{
+            transform: scale(1.5);
+        }
+        @include _992{
+            display: none;
+        }
+    }
+    
+}
+.move__back{
+    color: $secondColor;
+}
+.details{
+    &__name{
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: rem-calc(26px);
+        color: $mainColor;
+        font-weight: $baseFontWeight + 300;
+        line-height: $lineHeight + 15px;
+    }
+    &__separator{
+        @extend .separator;
+        &:after{
+            width: 0;
+        }
+        padding: 20px;
+    }
+    &__position{
+        color: $titleColor;
+        font-size: rem-calc(20px);
+        margin-bottom: 30px;
+    }
+    &__link{
+        padding: 2%;
+        border: 1px solid $titleColor;
+        border-radius: 50%;
+        color: $titleColor;
+        font-size: $baseFontSize - 6px;
+        
+        &:nth-child(1){
+            padding: 8px 11px;
+        }   
+    }
+    &__desc{
+        margin-top: 30px;
+        font-size: $baseFontSize - 4px;
+        line-height: $lineHeight;
+        margin-bottom: 10px;
+
+        @include _375{
+            font-size: $baseFontSize - 2;
+        }
+    }
+    &__separation{
+        @extend .separator;
+        &:after{
+            width: 0;
+        }
+        &:before{
+            width: 50px;
+            border-top: 5px dashed $secondColor;
+        }
+    }
+    &__but{
+        margin-top: 15px;
+        font-weight: 700;
+        border-left: 1px solid $secondColor;
+        
+    }
+}
+.image{
+    position: relative;
+
+    &__first{
+        width: 100px;
+        height: 100px;
+        border-top: 1px solid $secondColor;
+        border-left: 1px solid $secondColor;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+    }
+    &__second{
+        width: 100px;
+        height: 100px;
+        border-top: 1px solid $secondColor;
+        border-right: 1px solid $secondColor;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+    &__third{  
+        width: 100px;
+        height: 100px;
+        border-bottom: 1px solid $secondColor;
+        border-right: 1px solid $secondColor;
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+    }
+    &__fourth{
+        width: 100px;
+        height: 100px;
+        border-bottom: 1px solid $secondColor;
+        border-left: 1px solid $secondColor;
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+    }
+    &__person img{
+        width: 100%;
+        height: auto;
+    }
+}
+.more{
+    &__inf{
+    border-bottom: 1px solid $secondColor;
+    border-right: 1px solid $secondColor;
+    border-top: none;
+    border-left: none;
+    background-color: $whiteColor;
+    }
+    &__text{
+        font-weight:$baseFontWeight + 200;
+        color: $mainColor;
+        font-size: $baseFontSize - 5;
+        padding: 5px;
+    }
+
+}
+
+.go__front{
+    color: $secondColor;
+}

@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    &__nav{
+        display: flex;    
+    }
+    &__navitems{
+       padding: 10px;
+       font-size: $baseFontSize + 20;
+       color: $secondColor;
+       &:nth-child(2){
+        list-style: circle;
+       }
+    }
+}

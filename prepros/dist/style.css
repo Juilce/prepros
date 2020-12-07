@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.separator:before, .details__separation:before, .details__separator:before, .header__separator:before, .separator:after, .details__separation:after, .details__separator:after, .header__separator:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 1px;
+  border-top: 1px solid #ffcc00;
+  margin: 0 auto;
+}
+
+.sep:before, .main__separator:before {
+  content: " ";
+  display: block;
+  width: 1px;
+  height: 100px;
+  border-left: 1px solid #ffcc00;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 115px;
+}
+
+.header__title {
+  color: #898f8f;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+}
+.header__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.75rem;
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.header__separator {
+  margin-left: -30px;
+  display: flex;
+}
+.header__separator:before {
+  width: 200px;
+}
+.header__separator:after {
+  width: 200px;
+}
+.header .icon {
+  color: #ffcc00;
+  margin: -5px -300px;
+}
+
+.main {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
+.main__photo {
+  margin: 0 auto;
+  width: 388px;
+  height: 388px;
+  border: 1px solid #ffcc00;
+}
+@media screen and (max-width: 375px) {
+  .main__photo {
+    width: inherit;
+    height: inherit;
+  }
+}
+.main__info {
+  margin: 0 auto;
+  text-align: center;
+  width: 420px;
+}
+@media screen and (max-width: 768px) {
+  .main__info {
+    width: inherit;
+  }
+}
+.main__separator:before {
+  height: 500px;
+  margin-top: -70px;
+}
+@media screen and (max-width: 768px) {
+  .main__separator:before {
+    transform: rotate(90deg);
+    height: 100px;
+    margin-top: 0;
+  }
+}
+.main__prev, .main__next {
+  font-size: 1.875rem;
+}
+.main__prev:hover, .main__next:hover {
+  transform: scale(1.5);
+}
+@media screen and (max-width: 992px) {
+  .main__prev, .main__next {
+    display: none;
+  }
+}
+
+.move__back {
+  color: #ffcc00;
+}
+
+.details__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.625rem;
+  color: #666666;
+  font-weight: 800;
+  line-height: 39px;
+}
+.details__separator {
+  padding: 20px;
+}
+.details__separator:after {
+  width: 0;
+}
+.details__position {
+  color: #898f8f;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+.details__link {
+  padding: 2%;
+  border: 1px solid #898f8f;
+  border-radius: 50%;
+  color: #898f8f;
+  font-size: 10px;
+}
+.details__link:nth-child(1) {
+  padding: 8px 11px;
+}
+.details__desc {
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 375px) {
+  .details__desc {
+    font-size: 14px;
+  }
+}
+.details__separation:after {
+  width: 0;
+}
+.details__separation:before {
+  width: 50px;
+  border-top: 5px dashed #ffcc00;
+}
+.details__but {
+  margin-top: 15px;
+  font-weight: 700;
+  border-left: 1px solid #ffcc00;
+}
+
+.image {
+  position: relative;
+}
+.image__first {
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #ffcc00;
+  border-left: 1px solid #ffcc00;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+.image__second {
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #ffcc00;
+  border-right: 1px solid #ffcc00;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+.image__third {
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #ffcc00;
+  border-right: 1px solid #ffcc00;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+.image__fourth {
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #ffcc00;
+  border-left: 1px solid #ffcc00;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+}
+.image__person img {
+  width: 100%;
+  height: auto;
+}
+
+.more__inf {
+  border-bottom: 1px solid #ffcc00;
+  border-right: 1px solid #ffcc00;
+  border-top: none;
+  border-left: none;
+  background-color: #ffffff;
+}
+.more__text {
+  font-weight: 700;
+  color: #666666;
+  font-size: 11px;
+  padding: 5px;
+}
+
+.go__front {
+  color: #ffcc00;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer__nav {
+  display: flex;
+}
+.footer__navitems {
+  padding: 10px;
+  font-size: 36px;
+  color: #ffcc00;
+}
+.footer__navitems:nth-child(2) {
+  list-style: circle;
+}
+/*# sourceMappingURL=style.css.map */
