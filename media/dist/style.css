@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .main {
   margin: 0 auto;
   max-height: 1700px;
@@ -171,9 +174,11 @@
 
 .free {
   background-color: #ff6633;
-  color: #ffffff;
   padding: 15px;
   border: 0px solid;
+}
+.free__name {
+  color: #ffffff;
 }
 @media screen and (max-width: 375px) {
   .free {
@@ -186,7 +191,6 @@
   align-items: center;
   background-color: #00B6B6;
   min-height: 700px;
-  max-width: 1500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -248,5 +252,216 @@
   .text2__t {
     font-size: 0.8125rem;
   }
+}
+
+.home10 {
+  background-color: #B07CF7;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1180px;
+  min-height: 800px;
+  display: flexbox;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding-top: 5%;
+}
+
+.top {
+  display: block;
+  max-width: 570px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.top p {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.pictures {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-bottom: 50px;
+  position: relative;
+  margin-top: 50px;
+  box-sizing: content-box;
+}
+
+.text {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: -120px;
+}
+
+.text h2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.text p {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.data {
+  display: block;
+  width: 60px;
+  position: absolute;
+  margin-top: 100px;
+  font-size: 21px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 20pt;
+  margin-left: 20pt;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+span {
+  font-size: 30px;
+}
+
+.pictures .one:hover,
+.pictures .two:hover,
+.pictures .three:hover {
+  transform: scale(1.3) rotate(-15deg);
+}
+
+button {
+  background-color: #F72B3B;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+}
+
+.form {
+  background-image: url(image/12_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.contain {
+  max-width: 990px;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  padding-top: 4%;
+  margin-top: -3.6%;
+  margin-bottom: 50px;
+}
+
+.head {
+  margin: 0 auto;
+  text-align: center;
+  color: #333333;
+}
+.head h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 4%;
+}
+.head p {
+  max-width: 350px;
+  margin: 0 auto;
+  font-size: 17px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forma__add {
+  border: none;
+  max-width: 500px;
+}
+
+.inputs {
+  margin: 5px;
+  height: 50px;
+  background-color: #66cccc;
+  color: #ffffff;
+  border: none;
+  width: 460px;
+  padding-left: 40px;
+  font-size: 20px;
+}
+.inputs:hover {
+  background-color: #00cccc;
+  border-left: 4px solid #336699;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+::placeholder {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+option {
+  font-size: 20px;
+}
+
+.send {
+  color: #ffffff;
+  background-color: #336699;
+  padding: 5px 20px;
+  margin-left: 520px;
+  margin-top: -100px;
+}
+
+.info {
+  color: #333333;
+}
+.info h2 {
+  text-transform: uppercase;
+  margin-bottom: -15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.foot {
+  height: 90px;
+  background-color: #333333;
+  margin: 0 auto;
+}
+.foot__info {
+  display: flex;
+  max-width: 1175px;
+  margin: 0 auto;
+  justify-content: space-around;
+  color: #ededed;
+}
+.foot__info h2 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+.foot__span {
+  color: #ff3366;
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -161,9 +161,11 @@
 }
 .free{
     background-color: #ff6633;
-    color: #ffffff;
     padding: 15px;
     border: 0px solid;
+    &__name{
+        color: #ffffff;
+    }
 
     @include _375{
         padding: 5px;
