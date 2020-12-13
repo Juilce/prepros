@@ -1,0 +1,42 @@
+.main{
+    font-size: $baseFont;
+    font-family: $baseFont;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.intro{
+    background-image: url(img/IMG_3644.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 810px;
+    color: $baseColor;
+    background-attachment: fixed;
+
+    &__box{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        font-size: rem-calc(60px);
+        font-family: $fontTitle;
+        padding-top: 200px;
+        margin-top: 0;
+        @include _768{
+            padding-top: 50px;
+            font-size: rem-calc(25px);
+        }
+    }
+
+    &__desc{
+        font-size: rem-calc(27px);
+        font-family: $baseFont;
+        padding-top: 60px;
+        padding-bottom: 73px;
+        max-width: 900px;
+        margin: 0 auto;
+        @include _768{
+            font-size: rem-calc(18px);
+    }
+}

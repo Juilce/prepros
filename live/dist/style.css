@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+.main {
+  font-size: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.intro {
+  background-image: url(img/IMG_3644.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 810px;
+  color: #ffffff;
+  background-attachment: fixed;
+}
+.intro__box {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.intro__title {
+  font-size: 3.75rem;
+  font-family: "Fjalla One", sans-serif;
+  padding-top: 200px;
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .intro__title {
+    padding-top: 50px;
+    font-size: 1.5625rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

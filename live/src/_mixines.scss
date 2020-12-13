@@ -1,0 +1,24 @@
+@mixin _375{
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  }
+  @mixin _768{
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin _992{
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @mixin _1200{
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @function rem-calc($font-size : 0){
+    $remSize: $font-size / $baseFontSize;
+    @return #{$remSize}rem;
+}
