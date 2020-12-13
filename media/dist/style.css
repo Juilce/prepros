@@ -699,7 +699,7 @@ a {
 }
 @media screen and (max-width: 375px) {
   .tabs {
-    left: 20px;
+    left: 10px;
   }
 }
 
@@ -787,7 +787,7 @@ a {
 @media screen and (max-width: 375px) {
   .logo__name {
     left: 0px;
-    max-width: 375px;
+    min-width: 335px;
   }
 }
 
@@ -883,7 +883,7 @@ a {
 }
 @media screen and (max-width: 375px) {
   .sending {
-    margin-left: 20px;
+    margin-left: 5px;
   }
 }
 
@@ -902,18 +902,18 @@ a {
 }
 
 .formus__added {
-  display: flex;
   border: none;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  .formus {
-    margin-top: 25px;
+  .formus__added {
+    margin-top: 35px;
   }
 }
 @media screen and (max-width: 375px) {
-  .formus {
-    margin-top: 40px;
+  .formus__added {
+    margin-top: 45px;
+    margin-left: -10px;
   }
 }
 .formus__subscribe {

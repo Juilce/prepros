@@ -68,7 +68,7 @@ a{
         left: 30px;
     }
     @include _375{
-        left: 20px;
+        left: 10px;
     }
 }
 .texta{
@@ -144,6 +144,6 @@ a{
     }
     @include _375{
         left: 0px;
-        max-width: 375px;
+        min-width: 335px;
     }
 }

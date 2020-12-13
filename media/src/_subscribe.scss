@@ -11,9 +11,9 @@
     height: 200px;
     margin-left: 100px;
     padding-top: 100px;
-    
+
     @include _375{
-        margin-left: 20px;
+        margin-left: 5px;
     }
     
 }
@@ -33,16 +33,17 @@
 }
 .formus{
     &__added{
-        display: flex;
         border: none;
         justify-content: space-between;
+        @include _768{
+            margin-top: 35px;
+        }
+        @include _375{
+            margin-top: 45px;
+            margin-left: -10px;
+        }
     }
-    @include _768{
-        margin-top: 25px;
-    }
-    @include _375{
-        margin-top: 40px;
-    }
+   
     &__subscribe{
         font-size: 20px;
         color: #ffffff;
@@ -58,6 +59,7 @@
             padding: 0px 10px;
             margin: 0 auto;
         }
+       
     }
 }
 
