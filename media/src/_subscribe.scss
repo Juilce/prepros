@@ -11,6 +11,11 @@
     height: 200px;
     margin-left: 100px;
     padding-top: 100px;
+    
+    @include _375{
+        margin-left: 20px;
+    }
+    
 }
 .heada{
     max-width: 570px;
@@ -34,6 +39,9 @@
     }
     @include _768{
         margin-top: 25px;
+    }
+    @include _375{
+        margin-top: 40px;
     }
     &__subscribe{
         font-size: 20px;

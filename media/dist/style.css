@@ -787,7 +787,7 @@ a {
 @media screen and (max-width: 375px) {
   .logo__name {
     left: 0px;
-    min-width: 375px;
+    max-width: 375px;
   }
 }
 
@@ -881,6 +881,11 @@ a {
   margin-left: 100px;
   padding-top: 100px;
 }
+@media screen and (max-width: 375px) {
+  .sending {
+    margin-left: 20px;
+  }
+}
 
 .heada {
   max-width: 570px;
@@ -904,6 +909,11 @@ a {
 @media screen and (max-width: 768px) {
   .formus {
     margin-top: 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .formus {
+    margin-top: 40px;
   }
 }
 .formus__subscribe {
