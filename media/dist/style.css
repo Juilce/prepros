@@ -699,7 +699,7 @@ a {
 }
 @media screen and (max-width: 375px) {
   .tabs {
-    left: 10px;
+    left: 5px;
   }
 }
 
@@ -797,6 +797,12 @@ a {
   min-height: 1540px;
   margin: 0 auto;
 }
+@media screen and (max-width: 560px) {
+  .gallery {
+    width: inherit;
+    height: auto;
+  }
+}
 
 .wrap {
   display: flex;
@@ -806,6 +812,14 @@ a {
   display: flex;
   margin: 0 auto;
 }
+@media screen and (max-width: 991px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: auto;
+  }
+}
 
 .headerg {
   width: 590px;
@@ -814,9 +828,39 @@ a {
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 768px) {
+  .headerg {
+    width: inherit;
+  }
+}
 .headerg__name {
   font-size: 70px;
   margin-bottom: -10px;
+}
+@media screen and (max-width: 768px) {
+  .headerg__name {
+    font-size: 45px;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .headerg__name {
+    font-size: 35px;
+    padding-bottom: 3%;
+  }
+}
+.headerg__describe {
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .headerg__describe {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .headerg__describe {
+    font-size: 13px;
+  }
 }
 
 .photos {
@@ -824,16 +868,84 @@ a {
   height: 980px;
   display: flex;
 }
+@media screen and (max-width: 991px) {
+  .photos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
 .ona {
   width: 100%;
   height: auto;
   max-width: 700px;
 }
 
+@media screen and (max-width: 991px) {
+  .topa__biggest {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topa__biggest {
+    width: 525px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  .topa__biggest {
+    width: 380px;
+    height: auto;
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .topa__biggest {
+    margin-left: 0px;
+    margin-top: -50px;
+    width: 340px;
+    height: auto;
+  }
+}
 .topa__special {
   display: flex;
   width: 700px;
   margin-top: 10px;
+}
+@media screen and (max-width: 991px) {
+  .topa__special {
+    width: 450px;
+    height: auto;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topa__special {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    height: auto;
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .topa__special {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .topa__special {
+    display: flex;
+    flex-direction: row;
+    width: 165px;
+    height: auto;
+    margin-left: 0px;
+  }
 }
 
 .twa {
@@ -854,6 +966,43 @@ a {
   width: 100%;
   max-width: 345px;
   height: auto;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 991px) {
+  .downa {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 700px;
+    margin-left: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .downa {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  .downa {
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    height: auto;
+    margin-left: 75px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .downa {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 2px;
+  }
 }
 
 .btn {
@@ -864,6 +1013,16 @@ a {
   color: #ffffff;
   background-color: #5585A2;
   padding: 10px 30px;
+}
+@media screen and (max-width: 560px) {
+  .btn {
+    margin-top: -400px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .btn {
+    margin-top: -500px;
+  }
 }
 
 .subscribe {
@@ -900,8 +1059,14 @@ a {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .heada {
+    width: inherit;
+  }
+}
 
 .formus__added {
+  display: flex;
   border: none;
   justify-content: space-between;
 }
@@ -946,6 +1111,12 @@ a {
     width: inherit;
     height: 35px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .inpute {
+    width: 200px;
+    height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

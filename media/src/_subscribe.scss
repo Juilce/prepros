@@ -29,10 +29,14 @@
             margin: 0 auto;
         }
     }
+    @include _768{
+        width: inherit;
+    }
     
 }
 .formus{
     &__added{
+        display: flex;
         border: none;
         justify-content: space-between;
         @include _768{
@@ -74,6 +78,10 @@
         width: inherit;
         height: 35px;
         margin: 0 auto;
+    }
+    @include _375{
+        width: 200px;
+        height: 30px;
     }
 }
 

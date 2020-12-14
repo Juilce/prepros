@@ -3,6 +3,12 @@
     max-width: 1500px;
     min-height: 1540px;
     margin: 0 auto;
+
+    @include _560{
+        width: inherit;
+        height: auto;
+    } 
+
 }
 .wrap{
     display: flex;
@@ -11,6 +17,13 @@
     height: 1215px;
     display: flex;
     margin: 0 auto;
+
+    @include _991{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        height: auto;
+    } 
 }
 .headerg{
     width: 590px;
@@ -18,33 +31,109 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 60px;
-    
+     
+    @include _768{
+        width: inherit;
+    } 
+
     &__name{
         font-size: 70px;
         margin-bottom: -10px;
+
+        @include _768{
+            font-size: 45px;
+            padding-bottom: 5%;
+        }
+        @include _375{
+            font-size: 35px;
+            padding-bottom: 3%;
+        }
+    } 
+    &__describe{
+        font-size: 20px;
+
+        @include _768{
+            font-size: 17px;
+        }
+        @include _375{
+            font-size: 13px;
+        }
     }
 }
 .photos{
     width: 1175px;
     height: 980px;
     display: flex;
-    &__list{
-    
+
+    @include _991{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }
-}
+
 .ona{
     width: 100%;
     height: auto;
     max-width: 700px;
 }
 .topa{
+
+    &__biggest{
+        @include _991{
+            margin-left: 100px;
+        }
+        @include _768{
+            width: 525px;
+            height: auto;
+    
+        }
+        @include _560{
+            width: 380px;
+            height: auto;
+            margin-left: 70px;
+        }
+        @include _375{
+            margin-left: 0px;
+            margin-top: -50px;
+            width: 340px;
+            height: auto;
+        }
+    }
     
     &__special{
     display: flex;
     width: 700px;
     margin-top: 10px;
-    
+
+    @include _991{
+        width: 450px;
+        height: auto;
+        margin-left: 20px;
+        }
+    @include _768{
+        display: flex;
+        flex-direction: column;
+        width: 345px;
+        height: auto;
+        margin-left: 200px;
     }
+    @include _560{
+        display: flex;
+        flex-direction: row;
+        width: 200px;
+        height: auto;
+        margin-left: 50px;
+    }
+    @include _375{
+        display: flex;
+        flex-direction: row;
+        width: 165px;
+        height: auto;
+        margin-left: 0px;
+    }
+    }
+   
 }
 .twa{
     width: 100%;
@@ -63,7 +152,37 @@
         width: 100%;
         max-width: 345px;
         height: auto;
+        flex-wrap: wrap;
 
+    }
+    @include _991{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 700px;
+        margin-left: 120px;
+    }
+    @include _768{
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+        height: auto;
+
+    }
+    @include _560{
+        display: flex;
+        flex-direction: row;
+        width: 180px;
+        height: auto;
+        margin-left: 75px;
+    }
+    @include _375{
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 2px;
     }
 }
 
@@ -75,5 +194,12 @@
         color: #ffffff;
         background-color: #5585A2;
         padding: 10px 30px;
+    }
+    
+    @include _560{
+        margin-top: -400px;
+    }
+    @include _375{
+        margin-top: -500px;
     }
 }
