@@ -14,8 +14,8 @@
 
     @include _375{
         margin-left: 5px;
-    }
-    
+        width: inherit;
+    }    
 }
 .heada{
     max-width: 570px;
@@ -64,6 +64,9 @@
             margin: 0 auto;
         }
        
+    }
+    @include _768{
+        width: inherit;
     }
 }
 

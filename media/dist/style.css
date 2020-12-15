@@ -622,7 +622,10 @@ option {
 }
 
 .services {
-  background-color: #70BFFF;
+  background-image: url(image/Artboard.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   max-width: 1500px;
   min-height: 790px;
   margin: 0 auto;
@@ -636,9 +639,17 @@ option {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 991px) {
+  .content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 768px) {
   .content {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
   }
 }
 
@@ -679,27 +690,24 @@ a {
   .tabs {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    width: inherit;
   }
 }
 @media screen and (max-width: 768px) {
   .tabs {
-    position: absolute;
-    width: 200px;
     height: 230px;
-    left: 100px;
-    top: 180px;
-    z-index: 2;
+    margin-left: 100px;
+    margin-top: 300px;
   }
 }
 @media screen and (max-width: 560px) {
   .tabs {
-    left: 30px;
+    margin-left: 30px;
   }
 }
 @media screen and (max-width: 375px) {
   .tabs {
-    left: 5px;
+    margin-left: 5px;
   }
 }
 
@@ -747,11 +755,7 @@ a {
 }
 
 .logo__name {
-  background-image: url(image/tomatoes.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-width: 550px;
+  min-width: 300px;
   min-height: 600px;
   display: flex;
   justify-content: center;
@@ -763,19 +767,16 @@ a {
 @media screen and (max-width: 991px) {
   .logo__name {
     font-size: 40px;
-    margin-right: 70px;
+    width: inherit;
+    height: auto;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 768px) {
   .logo__name {
-    position: absolute;
-    align-items: start;
     font-size: 30px;
-    top: -150px;
-    left: 40px;
-    z-index: 1;
-    min-width: 470px;
-    min-height: 550px;
+    margin: 0 auto;
+    margin-top: -700px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -797,7 +798,7 @@ a {
   min-height: 1540px;
   margin: 0 auto;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 991px) {
   .gallery {
     width: inherit;
     height: auto;
@@ -870,6 +871,7 @@ a {
 }
 @media screen and (max-width: 991px) {
   .photos {
+    width: inherit;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -884,7 +886,7 @@ a {
 
 @media screen and (max-width: 991px) {
   .topa__biggest {
-    margin-left: 100px;
+    width: inherit;
   }
 }
 @media screen and (max-width: 768px) {
@@ -897,12 +899,10 @@ a {
   .topa__biggest {
     width: 380px;
     height: auto;
-    margin-left: 70px;
   }
 }
 @media screen and (max-width: 375px) {
   .topa__biggest {
-    margin-left: 0px;
     margin-top: -50px;
     width: 340px;
     height: auto;
@@ -915,9 +915,8 @@ a {
 }
 @media screen and (max-width: 991px) {
   .topa__special {
-    width: 450px;
+    width: 400px;
     height: auto;
-    margin-left: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -926,7 +925,7 @@ a {
     flex-direction: column;
     width: 345px;
     height: auto;
-    margin-left: 200px;
+    margin-left: 100px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -935,7 +934,7 @@ a {
     flex-direction: row;
     width: 200px;
     height: auto;
-    margin-left: 50px;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -944,7 +943,12 @@ a {
     flex-direction: row;
     width: 165px;
     height: auto;
-    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topa {
+    width: inherit;
+    height: auto;
   }
 }
 
@@ -953,6 +957,11 @@ a {
   max-width: 520px;
   height: auto;
   margin-right: 10px;
+}
+@media screen and (max-width: 375px) {
+  .twa {
+    margin-right: 0px;
+  }
 }
 
 .downa {
@@ -966,42 +975,35 @@ a {
   width: 100%;
   max-width: 345px;
   height: auto;
-  flex-wrap: wrap;
 }
 @media screen and (max-width: 991px) {
   .downa {
     display: flex;
     flex-direction: row;
     height: auto;
-    width: 700px;
-    margin-left: 120px;
+    width: inherit;
+    margin-left: 55px;
   }
 }
 @media screen and (max-width: 768px) {
   .downa {
-    display: flex;
-    flex-direction: row;
     width: 250px;
     height: auto;
+    margin: 0 auto;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 560px) {
   .downa {
-    display: flex;
-    flex-direction: row;
     width: 180px;
     height: auto;
-    margin-left: 75px;
   }
 }
 @media screen and (max-width: 375px) {
   .downa {
-    display: flex;
-    flex-direction: row;
     width: 150px;
     height: auto;
-    margin-left: 20px;
-    margin-right: 2px;
+    margin-left: 0px;
   }
 }
 
@@ -1043,6 +1045,7 @@ a {
 @media screen and (max-width: 375px) {
   .sending {
     margin-left: 5px;
+    width: inherit;
   }
 }
 
@@ -1096,6 +1099,11 @@ a {
     height: 35px;
     padding: 0px 10px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .formus {
+    width: inherit;
   }
 }
 

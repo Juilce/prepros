@@ -1,5 +1,8 @@
 .services{
-    background-color: #70BFFF;
+    background-image: url(image/Artboard.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     max-width: 1500px;
     min-height: 790px;
     margin: 0 auto;
@@ -11,10 +14,16 @@
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    
-    @include _768{
-        position: relative;
+    @include _991{
+        display: flex;
+        justify-content: space-around;
 
+    }
+
+    @include _768{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
     }
 }
 a{
@@ -53,22 +62,19 @@ a{
     @include _991{
         display: flex;
         flex-direction: column; 
-        margin-left: 20px;
+        width: inherit;
     }
 
     @include _768{
-        position: absolute;
-        width: 200px;
         height: 230px;
-        left: 100px;
-        top: 180px;
-        z-index: 2;
+        margin-left: 100px;
+        margin-top: 300px;
     }
     @include _560{
-        left: 30px;
+        margin-left: 30px;
     }
     @include _375{
-        left: 5px;
+        margin-left: 5px;
     }
 }
 .texta{
@@ -111,11 +117,7 @@ a{
 }
 
 .logo__name{
-    background-image: url(image/tomatoes.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-width: 550px;
+    min-width: 300px;
     min-height: 600px;
     display: flex;
     justify-content: center;
@@ -126,17 +128,14 @@ a{
     
     @include _991{
         font-size: 40px;
-        margin-right: 70px;
+        width: inherit;
+        height: auto; 
+        margin: 0 auto;
     }
     @include _768{
-        position: absolute;
-        align-items: start;
         font-size: 30px;
-        top: -150px;
-        left: 40px;
-        z-index: 1;
-        min-width: 470px;
-        min-height: 550px; 
+        margin: 0 auto;
+        margin-top: -700px;
     }
     @include _560{
         left: 10px;
