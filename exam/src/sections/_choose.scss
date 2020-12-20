@@ -1,0 +1,16 @@
+.choose{
+    &__package{
+    background-image: url(image/back4.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 740px;
+    color: $baseColor;
+    text-align: center;
+    }
+    &__end{
+        min-height: 337px;
+        width: 100%;
+        background-color: $secondColor;
+    }
+}

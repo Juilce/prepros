@@ -1,0 +1,48 @@
+.book{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.pack1{
+    background-image: url(image/back3.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    color: $baseColor;
+    text-align: center;
+    position: relative;
+
+    &__detail{
+
+            background-color: rgb(35, 35, 35);
+            opacity: 0.902;
+            position: absolute;
+            left: 345px;
+            top: 50px;
+            width: 540px;
+            height: 371px;
+          
+          
+    }
+    &__btn{
+            background-color: $secondColor;
+            position: absolute;
+            left: 945px;
+            top: 500px;
+            width: 225px;
+            height: 60px;
+          
+    }
+}
+.pack2{
+    background-image: url(image/spain.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    color: $baseColor;
+    text-align: center;
+    position: relative;
+}

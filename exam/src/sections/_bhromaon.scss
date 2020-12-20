@@ -1,0 +1,94 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.bhromaon{
+    background-image: url(image/Image1.jpg);
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 740px;
+    color: $baseColor;
+
+    &__wrapper{
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+
+.nav{
+    min-height: 80px;
+    width: 100%;
+    background-color: $btnColor;
+    border-bottom: 1px solid $btnColor;
+    position: relative;
+    order: 1;
+
+    &__toggle,
+    &__btn{
+        display: none;
+    }
+    &__btn{
+        padding: 28px 20px;
+        float: right;
+        @include _768 {
+            display: block;
+        }
+    }
+    &__toggle{
+        &:checked + .nav__list{
+            visibility: visible;
+        }
+    }
+
+    &__list{
+        margin: 25px;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding-left: 0;
+
+        @include _768{
+            background-color: #fff;
+            position: absolute;
+            flex-direction: column;
+            visibility: hidden;
+            margin: 0;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+    &__box{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__link{
+        display: inline-block;
+        font-size: rem-calc(30px);
+        color: $secondColor;
+        text-decoration: none;
+
+        &:hover, &:focus{
+            color: $activeColor;
+        }
+    }
+    &__item{
+
+        @include _768{
+            margin-left: 40px;
+        }
+
+        & + &{
+            margin-left: 40px;
+
+        }
+    }
+}
+
+
+

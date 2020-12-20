@@ -1,0 +1,17 @@
+.comment{
+    background-image: url(image/backlast.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 730px;
+    color: $baseColor;
+    text-align: center;
+
+    &__wrap{
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
