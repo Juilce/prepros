@@ -11,29 +11,51 @@
     background-repeat: no-repeat;
     min-height: 700px;
     color: $baseColor;
-    text-align: center;
     position: relative;
 
     &__detail{
-
-            background-color: rgb(35, 35, 35);
+            background-color: #232323;
             opacity: 0.902;
             position: absolute;
-            left: 345px;
-            top: 50px;
-            width: 540px;
-            height: 371px;
-          
+            left: 330px;
+            top: 230px;
+            width: 486px;
+            height: 304px;
+            padding: 2%;
+            padding-top: 3%;
+            @include _992{
+                position: relative;
+                margin: 0 auto;
+                left: auto;
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+            @include _768{
+                width: inherit;
+            }
           
     }
+    &__name{
+        text-transform: uppercase;
+        font-size: rem-calc(20px);
+        font-weight: 100;
+    }
+    &__description{
+        line-height: 30px;
+    }
     &__btn{
-            background-color: $secondColor;
+            background-color: $btnColor;
+            color: $baseColor;
             position: absolute;
-            left: 945px;
-            top: 500px;
+            left: 30px;
+            bottom: 50px;
             width: 225px;
             height: 60px;
-          
+
+            @include _768{
+                left: auto;
+                bottom: 5px;
+            }
     }
 }
 .pack2{
@@ -43,6 +65,52 @@
     background-repeat: no-repeat;
     min-height: 700px;
     color: $baseColor;
-    text-align: center;
     position: relative;
+    width: 100%;
+
+   
+    &__detail{
+        background-color: #232323;
+        opacity: 0.902;
+        position: absolute;
+        right: 330px;
+        top: 230px;
+        width: 486px;
+        height: 304px;
+        padding: 2%;
+        padding-top: 3%;
+        @include _992{
+            position: relative;
+            margin: 0 auto;
+            right: auto;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        @include _768{
+            width: inherit;
+           
+        }
+        }
+        &__name{
+            text-transform: uppercase;
+            font-size: rem-calc(20px);
+            font-weight: 100;
+        }
+        &__description{
+                line-height: 30px;
+        }
+        &__btn{
+        background-color: $btnColor;
+        color: $baseColor;
+        position: absolute;
+        right: 30px;
+        bottom: 50px;
+        width: 225px;
+        height: 60px; 
+        
+        @include _768{
+            right: auto;
+            bottom: 5px;
+        }
+}
 }

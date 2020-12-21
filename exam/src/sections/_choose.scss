@@ -1,5 +1,5 @@
 .choose{
-    &__package{
+    &__pack{
     background-image: url(image/back4.jpg);
     background-position: top;
     background-size: cover;
@@ -7,10 +7,161 @@
     min-height: 740px;
     color: $baseColor;
     text-align: center;
+    margin: 0 auto;
+    }
+    &__content{
+        max-width: 1110px;
+        display: flex;
+        margin: 0 auto;
+        @include _768{
+            display: flex;
+            flex-direction: column;
+            width: inherit;
+            height: auto;
+            margin: 0 auto;
+        }  
+    }
+    &__plot{
+        max-width: 540px;
+        margin-top: 200px;
+        min-height: 335px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        @include _768{
+            width: inherit;
+            text-align: center;            
+            margin-top: 50px;
+            margin: 0 auto;
+        }
+      
+    }
+    &__title{
+        font-size: rem-calc(36px);
+        font-family: $addFont;
+        font-weight: 100;
+    }
+    &__text{
+        font-size: rem-calc(16px);
+    }
+    &__btn{
+        background-color: $btnColor;
+        color: $baseColor;
+        margin-top: 50px;
+        width: 225px;
+        height: 60px;
+        font-size: rem-calc(16px);
+        font-family: $addFont;
+        @include _768{
+            margin: 0 auto;
+            width: inherit;
+        }
+    }
+    &__pictures{
+        max-width: 475px;
+        min-height: 445px;
+        margin-top: 120px;
+        @include _992{
+            width: inherit;
+            height: auto;
+            margin: 0 auto;
+        }
     }
     &__end{
-        min-height: 337px;
+        min-height: 335px;
         width: 100%;
         background-color: $secondColor;
     }
+    &__lines{
+        width: 690px;
+        margin: 0 auto;
+    }
+    &__blocks{
+        width: 980px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        @include _992{
+            width: inherit;
+        }
+    }
+}
+.picture{
+    display: flex;
+    flex-direction: column;
+    @include _768{
+        margin-top: 50px;
+    }
+    &__one{  
+        margin-left: 95px;
+        @include _768{
+            margin-left: inherit;
+        }   
+    }
+    &__two{
+        margin-top: 5px;
+        margin-left: 220px;  
+        @include _1200{
+            margin-left: 95px;
+        }  
+        @include _768{
+            margin-left: inherit;
+        }
+    }
+   
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    margin-bottom: -20px;
+    &__eno,
+    &__owt{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    @include _992{
+        width: inherit;
+        height: auto;
+    }
+}
+.block{
+    
+    &__first, &__second, &__third{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    }
+    &__icon{
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        margin-bottom: -6px;
+        
+        @include _375{
+            width: 40px;
+            height: 40px;        
+        }
+    }
+    &__text{
+        font-family: $addFont;
+        font-size: rem-calc(36px);
+        @include _768{
+            font-size: rem-calc(26px);
+        }
+        @include _375{
+            font-size: rem-calc(16px);
+        }
+
+    }
+}
+.icon-search{
+    stroke: #5474FD;
+}
+.icon-done{
+    stroke: #EE5C5C;
+}
+.icon-like{
+    stroke: #008FE1;
 }

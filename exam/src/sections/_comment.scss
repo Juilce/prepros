@@ -8,10 +8,65 @@
     text-align: center;
 
     &__wrap{
-        max-width: 1200px;
+        max-width: 1110px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         text-align: center;
     }
+    &__title{
+        font-size: rem-calc(36px);
+        font-weight: 100;
+        font-family: $addFont;
+        margin-top: 120px;
+        margin-bottom: 95px;
+        @include _375{
+            font-size: rem-calc(26px);
+            margin-top: 60px;
+        }
+    }
+}
+.info{
+    display: flex;
+    @include _992{
+        display: flex;
+        flex-direction: column;
+    }
+    &__plot{
+        width: 665px;
+        height: 184px;
+        padding: 50px 60px 50px 60px;
+        background-color: $secondColor;
+        text-align: left;
+        position: relative;
+        
+        @include _992{
+            width: inherit;
+            height: auto;
+        }
+    }
+   &__name{
+    font-size: rem-calc(20px);
+    font-weight: 100;
+    margin-top: -10px;
+    margin-bottom: 5px;
+   }
+    &__icon{
+        width: 25px;
+        height: 25px;
+        fill: $btnColor; 
+        position: absolute;
+    }
+    &__text{
+        text-indent: 30px;    
+        line-height: 25px;
+        font-size: rem-calc(16px);
+        font-weight: 100;
+    }
+   &__last{
+    @include _768{
+        width: 340px;
+        height: auto;
+    }
+   }
 }

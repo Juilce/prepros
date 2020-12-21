@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="examination">
+    <link rel="shortcut icon" href="image/dog.jpg" type="image/jpg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>Exam</title>
 </head>
 <body>
@@ -14,25 +17,31 @@
                     <div class="bhromaon__box">
                       <h1 class="bhromaon__logo">BHROMAON</h1>
                       <p class="bhromaon__text">Safe Travel Anywhere</p>
-                      <form class="bhromaon__form forma" action="" method="GET" target="_blank"></form>
+                      <form class="bhromaon__form forma" target="_blank"></form>
                         <fieldset class="forma__field">
                             <input class="forma__search" type="text" required placeholder="Search Your Travel Destination">
-                            <button class="forma__btn">SEARCH</button>
+                            <button class="forma__btn button">SEARCH
+                                <i class="button__icon fa fa-search"></i>                            
+                            </button>
                         </fieldset>
                     </div>
                     <div class="bhromaon__down">
                         <p class="bhromaon__scroll">Scroll Down</p>
+                        <i class="bhromaon__icon fas fa-chevron-down"></i>                    
                     </div>
                 </div>
             </section>
             <section class="navigation">
                 <nav class="navigation__list nav">
-                    <div class="nav__logo">BHROMAON</div>
+                    <div class="nav__logo">
+                        <h2 class="nav__title">BHROMAON</h2>
+                    </div>
                     <div class="nav__box">
-                        <label for="toggle" class="nav__name">
+                        <label for="burger" class="nav__toggle">
                             <i class="fas fa-bars"></i>
                           </label>
-                        <input class="nav__burger" name="toggle" type="checkbox" />
+                        <input class="nav__burger" id="burger" type="checkbox" />
+            
                         <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link">WHO WE ARE</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">WHAT WE DO</a></li>
@@ -43,60 +52,70 @@
                 </nav>
             </section>
             <section class="choose">
-                <div class="choose__package">
-                    <div class="choose__text">
-                        <h2 class="choose__title"></h2>
-                        <p class="choose__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
-                        <p class="choose__text">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
-                        <button class="choose__btn">EXPLORE PLACES</button>
-                    </div>
-                    <div class="choose__pictures picture">
-                        <div class="picture__one">
-                            <img src="image/Image2.jpg" alt="">
+                <div class="choose__pack">
+                    <div class="choose__content">
+                        <div class="choose__plot">
+                            <h2 class="choose__title">Why choose us </h2>
+                            <p class="choose__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
+                            <p class="choose__text">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+                            <button class="choose__btn">EXPLORE PLACES</button>
                         </div>
-                        <div class="picture__two">
-                            <img src="image/Image3.jpg" alt="">
+                        <div class="choose__pictures picture">
+                            <div class="picture__one">
+                                <img class="picture__img" src="image/Image2.jpg" alt="">
+                            </div>
+                            <div class="picture__two">
+                                <img class="picture__img" src="image/Image3.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="choose__end">
-                    <div class="choose__block first">
-                        svg
-                        <p></p>
+                    <div class="choose__lines line">
+                        <div class="line__rise">
+                            <img class="line__owt" src="image/Shape.png" alt="">
+                        </div>
+                        <div class="line__rise">
+                            <img class="line__eno" src="image/Shape.png" alt="">
+                        </div>
                     </div>
-                    <div class="choose__raise">
-                        <img src="image/Shape.png" alt="">
-                    </div>
-                    <div class="choose__block first">
-                        svg
-                        <p></p>
-                    </div>
-                    <div class="choose__raise">
-                        <img src="image/Shape.png" alt="">
-                    </div>
-                    <div class="choose__block first">
-                        svg
-                        <p></p>
+                    <div class="choose__blocks block">
+                        <div class="block__first">
+                            <svg class="block__icon icon-search"><use xlink:href="image/icons.svg#icon-search"></use></svg>
+                            <p class="block__text">Search Places</p>
+                        </div>
+                        <div class="block__second">
+                            <svg class="block__icon icon-done"><use xlink:href="image/icons.svg#icon-done"></use></svg>
+                            <p class="block__text">Select Places</p>
+                        </div>                        
+                        <div class="block__third">
+                            <svg class="block__icon icon-like"><use xlink:href="image/icons.svg#icon-like"></use></svg>
+                            <p class="block__text">Book & Enjoy</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="book">
                 <div class="book__packs pack1">
-                    <div class="pack1__detail">
-                        <p class="pack1__country">Spain</p>
-                        <h2 class="pack1__name">Grand Spain Madrid</h2>
-                        <p class="pack1__description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-                        <button class="pack1__btn">BOOK NOW</button>
+                    
+                        <div class="pack1__detail">
+                            <p class="pack1__country">Spain</p>
+                            <h2 class="pack1__name">Grand Spain Madrid</h2>
+                            <p class="pack1__description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+                            <button class="pack1__btn">BOOK NOW</button>
+                        </div>
                     </div>
-                </div>
+                
                 <div class="book__packs pack2">
-                    <div class="pack2__detail">
-                        <p class="pack2__country">Spain</p>
-                        <h2 class="pack2__name">Grand Spain Madrid</h2>
-                        <p class="pack2__description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-                        <button class="pack2__btn">BOOK NOW</button>
+                   
+                        <div class="pack2__detail">
+                            <p class="pack2__country">Spain</p>
+                            <h2 class="pack2__name">Grand Spain Madrid</h2>
+                            <p class="pack2__description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+                            <button class="pack2__btn">BOOK NOW</button>
+                        </div>
                     </div>
-                </div>
+               
             </section>
             <section class="comment">
                 <div class="comment__wrap">
@@ -107,20 +126,34 @@
                         </div>
                         <div class="info__plot">
                             <h2 class="info__name">SAM SUMON</h2>
+                                <svg class="info__icon icon-quote"><use xlink:href="image/icons.svg#icon-quote"></use></svg>
+                                <p class="info__text">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
                             
-                            <p class="info__text">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
                         </div>
                     </div>
                 </div>
             </section>
             <footer class="footer">
-                <h2 class="footer__logo">BHROMAON</h2>
-                <p class="footer__text">Safe Travel Anywhere</p>
-                <div class="footer__icons icon">
-                    <a class="icon__link" href="https://www.facebook.com/" target="_blank"></a>
-                    <a class="icon__link" href="https://twitter.com/" target="_blank"></a>
-                    <a class="icon__link" href="https://www.google.com.ua/" target="_blank"></a>
-                    <a class="icon__link" href="https://www.linkedin.com/" target="_blank"></a>
+                <div class="footer__content">
+                    <h2 class="footer__logo">BHROMAON</h2>
+                    <p class="footer__text">Safe Travel Anywhere</p>
+                    <div class="footer__icons icon">
+                        <a class="icon__link" href="https://www.facebook.com/" target="_blank">
+                            <svg class="icon__svg icon-facebook"><use xlink:href="image/icons.svg#icon-facebook"></use></svg>
+                        </a>
+                        <a class="icon__link" href="https://twitter.com/" target="_blank">
+                            <svg class="icon__svg icon-twitter"><use xlink:href="image/icons.svg#icon-twitter"></use></svg>
+                        </a>
+                        <a class="icon__link" href="https://www.youtube.com/" target="_blank">                        
+                            <svg class="icon__svg icon-youtube"><use xlink:href="image/icons.svg#icon-youtube"></use></svg>
+                        </a>
+                        <a class="icon__link" href="https://www.linkedin.com/" target="_blank">                        
+                            <svg class="icon__svg icon-linkedin"><use xlink:href="image/icons.svg#icon-linkedin"></use></svg>
+                        </a>
+                        <a class="icon__link" href="https://www.pinterest.com/" target="_blank">                        
+                            <svg class="icon__svg icon-pinterest"><use xlink:href="image/icons.svg#icon-pinterest"></use></svg>
+                        </a>
+                    </div>
                 </div>
             </footer>
     </main>
