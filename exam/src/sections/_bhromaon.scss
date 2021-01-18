@@ -84,15 +84,16 @@
     }   
 }
 .forma{
+    position: relative;
+    text-align: center;
     &__field{
         border: none;
-        position: relative;
-        
+        width: 100%;
     }
     &__search{
-        width: 500px;
+        width: 650px;
         height: 56px;
-        left: 0;
+        right: 0;
         border: 1px solid $baseColor;
         position: absolute;
         text-align: center;
@@ -112,7 +113,7 @@
         position: absolute;
         right: 0;        
         @include _768{
-            width: inherit;
+            width: 300px;
             position: relative;
             margin: 0 auto;
         }
@@ -140,83 +141,82 @@
     max-width: 1110px;
     margin: 0 auto;
     position: relative;
-    display: flex;
     justify-content: space-between;
+    @include _768{
+        border-bottom: 1px solid #000000;
+    }
     &__title{
         font-size: rem-calc(24px);
+        padding-top: 10px;
+        margin-bottom: -10px;
     }
-    &__box{
-        width: 570px;
-        display: flex;
-        justify-content: space-between;
+    &__box {
+        max-width: 1110px;
+        margin: 0 auto;
     }
+
     &__toggle,
-    &__burger{
+    &__btn {
         display: none;
     }
-    &__burger{
+    &__btn{
         padding: 28px 20px;
-        
         @include _768 {
             display: block;
-            position: absolute;
-            right: 30px;    
-            z-index: 2;  
-            width: 30px;
-            height: 30px;
-            opacity: 1;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+            &:hover{
+                color: $secondColor;
+            }
+        }
+    }
 
-            &:checked + .nav__list{
-                display: block;
-                background: #ffffffff;
-        }
-    }}
     &__toggle{
-        @include _768 {
-            display: block;
-            position: absolute;
-            right: 30px;    
-            z-index: 2;
-            font-size: 40px;
+        &:checked + .nav__list {
+            visibility: visible;
+            background: $btnColor;
         }
-        
     }
 
     &__list{
-        margin: 25px;
+        padding-bottom: 25px;
+        margin-top: -25px;
         display: flex;
         justify-content: flex-end;
         list-style: none;
         padding-left: 0;
 
-        @include _768{
-            background-color: $btnColor;
+        @include _768 {
             position: absolute;
             flex-direction: column;
             visibility: hidden;
-            margin: 0;
             width: 100%;
+            background: $btnColor;
+            margin: 0;
             padding-bottom: 20px;
             text-align: center;
-            
-    }}
-    
-    &__link{
-        display: inline-block;
-        color: $baseColor;
-        font-size: rem-calc(14px);
-        font-family: $addFont;
-        text-decoration: none;
-    
-        &:hover, &:focus{
-            color: $activeColor;
         }
     }
-    &__item{
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $baseColor;
+        font-size: rem-calc(14px);
+        &:hover,
+        &:focus {
+            color: $secondColor;
+        }
         @include _768{
+            font-size: rem-calc(20px);
+            padding-top: 5px;
+        }
+    }
+    &__item {
+        @include _768 {
             margin-left: 40px;
         }
-        & + &{
+        & + & {
             margin-left: 40px;
         }
     }

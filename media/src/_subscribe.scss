@@ -11,11 +11,12 @@
     height: 200px;
     margin-left: 100px;
     padding-top: 100px;
-
-    @include _375{
-        margin-left: 5px;
+   
+    @include _560{
         width: inherit;
-    }    
+        height: auto;
+        margin-left: 10px;
+    }  
 }
 .heada{
     max-width: 570px;
@@ -42,6 +43,7 @@
         @include _768{
             margin-top: 35px;
         }
+    
         @include _375{
             margin-top: 45px;
             margin-left: -10px;

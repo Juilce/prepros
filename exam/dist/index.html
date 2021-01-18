@@ -17,13 +17,14 @@
                     <div class="bhromaon__box">
                       <h1 class="bhromaon__logo">BHROMAON</h1>
                       <p class="bhromaon__text">Safe Travel Anywhere</p>
-                      <form class="bhromaon__form forma" target="_blank"></form>
+                      <form class="bhromaon__form forma" action="#" target="_blank" method="GET" enctype="text/plain">
                         <fieldset class="forma__field">
                             <input class="forma__search" type="text" required placeholder="Search Your Travel Destination">
                             <button class="forma__btn button">SEARCH
                                 <i class="button__icon fa fa-search"></i>                            
                             </button>
                         </fieldset>
+                    </form>
                     </div>
                     <div class="bhromaon__down">
                         <p class="bhromaon__scroll">Scroll Down</p>
@@ -37,21 +38,18 @@
                         <h2 class="nav__title">BHROMAON</h2>
                     </div>
                     <div class="nav__box">
-                        <label for="burger" class="nav__toggle">
-                            <i class="fas fa-bars"></i>
-                          </label>
-                        <input class="nav__burger" id="burger" type="checkbox" />
-            
+                        <label class="nav__btn" for="nav__toggle"><i class="fas fa-bars"></i></label>
+                        <input class="nav__toggle" id="nav__toggle" type="checkbox" />
                         <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">WHO WE ARE</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">WHAT WE DO</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">TRAVEL WITH US</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">CONTACT US</a></li>
+                        <li class="nav__item"><a href="#1" class="nav__link">WHO WE ARE</a></li>
+                        <li class="nav__item"><a href="#2" class="nav__link">WHAT WE DO</a></li>
+                        <li class="nav__item"><a href="#3" class="nav__link">TRAVEL WITH US</a></li>
+                        <li class="nav__item"><a href="#4" class="nav__link">CONTACT US</a></li>
                     </ul>
                 </div>
                 </nav>
             </section>
-            <section class="choose">
+            <section class="choose" id="1">
                 <div class="choose__pack">
                     <div class="choose__content">
                         <div class="choose__plot">
@@ -95,7 +93,7 @@
                     </div>
                 </div>
             </section>
-            <section class="book">
+            <section class="book" id="2">
                 <div class="book__packs pack1">
                     
                         <div class="pack1__detail">
@@ -117,7 +115,7 @@
                     </div>
                
             </section>
-            <section class="comment">
+            <section class="comment" id="3">
                 <div class="comment__wrap">
                     <h2 class="comment__title">What Our  Tourist Say</h2>
                     <div class="comment__content info">
@@ -133,7 +131,7 @@
                     </div>
                 </div>
             </section>
-            <footer class="footer">
+            <footer class="footer" id="4">
                 <div class="footer__content">
                     <h2 class="footer__logo">BHROMAON</h2>
                     <p class="footer__text">Safe Travel Anywhere</p>

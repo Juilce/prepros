@@ -2,6 +2,9 @@
     min-height: 270px;
     width: 100%;
     background-color: $secondColor;
+    @include _992{
+        width: inherit;
+    }
     &__content{
         max-width: 175px;
         display: flex;

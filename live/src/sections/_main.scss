@@ -1,8 +1,9 @@
 .main{
     font-size: $baseFont;
     font-family: $baseFont;
-    max-width: 1920px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
 }
 .intro{
     background-image: url(img/IMG_3644.jpg);
@@ -12,6 +13,8 @@
     min-height: 810px;
     color: $baseColor;
     background-attachment: fixed;
+    color: $baseColor;
+    text-align: center;
 
     &__box{
         max-width: 1080px;
@@ -30,13 +33,135 @@
     }
 
     &__desc{
-        font-size: rem-calc(27px);
+        font-size: rem-calc(24px);
         font-family: $baseFont;
         padding-top: 60px;
-        padding-bottom: 73px;
-        max-width: 900px;
+        padding-bottom: 75px;
         margin: 0 auto;
+        
         @include _768{
             font-size: rem-calc(18px);
+            padding: 60px 10px;
     }
 }
+}
+
+.fieldset{
+    display: flex;
+    justify-content: space-around;
+    max-width: 950px;
+    margin: 0 auto;
+
+    @include _768{
+        flex-wrap: wrap;
+    }
+
+    &__box{
+        width: 250px;
+        border: 1px solid $baseColor;
+        border-top: 0;
+        position: relative;
+
+        @include _768{
+            margin-bottom: 20px;
+        }
+
+        &::before{
+            content: '';
+            border-top: 1px solid $baseColor;
+            width: 100px;
+            display: block;
+            position: absolute;
+        }
+        &::after{
+            content: '';
+            border-top: 1px solid $baseColor;
+            width: 100px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        font-size: 25px;
+        top: -12.5px;
+    }
+
+    &__number{
+        font-size: rem-calc(48px);
+        font-family: $fontTitle;
+        margin-top: 33px;
+        display: inline-block;
+    }
+    &__label{
+        margin:0 0 30px;
+    }
+}
+
+.nav{
+    border-bottom: 1px solid;
+    position: relative;
+    order: 1;
+
+    &__toggle,
+    &__btn{
+        display: none;
+    }
+    &__btn{
+        padding: 28px 20px;
+        float: right;
+        @include _768 {
+            display: block;
+        }
+        
+    &__toggle{
+        &:checked + .nav__list{
+            visibility: visible;
+        }
+    }
+
+    &__list{
+        margin: 25px;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding-left: 0;
+
+        @include _768{
+            background-color: #fff;
+            position: absolute;
+            flex-direction: column;
+            visibility: hidden;
+            margin: 0;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+    &__box{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__link{
+        display: inline-block;
+        font-size: rem-calc(30px);
+        color: $secondColor;
+        text-decoration: none;
+
+        &:hover, &:focus{
+            color: $activeColor;
+        }
+    }
+    &__item{
+
+        @include _768{
+            margin-left: 40px;
+        }
+
+        & + &{
+            margin-left: 40px;
+
+    }
+}}
