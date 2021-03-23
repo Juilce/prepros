@@ -1,0 +1,91 @@
+.testimonials{
+    width: 100%;
+    color: #ffff;
+    align-items: center;
+    &__slider{       
+        min-height: 800px; 
+        margin: 0 auto;
+        display: flex;
+        align-items: center;       
+    }
+}
+.box {
+    text-align: center;
+    max-height: 800px;
+    flex-direction: column;
+    background-image: url(image/Img.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+   
+
+    &__back{
+        background-color: rgb(110, 119, 74, 0.4);
+        z-index: 9;
+        min-height: 800px;
+    }
+    &__rate{
+        position: absolute;
+        display: flex;
+        top: 260px;
+        display: flex;
+        justify-content: center; 
+        left: 48%;
+        @include _768{
+            top: 100px;
+        }
+        
+    }
+    &__info {
+        position: absolute;
+        font-family: $fontMain;
+        width: 770px;
+        height: 240px;
+        top: 300px;
+        line-height: 40px;
+        left: 25%; 
+        right: 25%;
+        @include _1200{
+            width: inherit;
+        }
+        @include _992{
+            top: 150px;
+            left: inherit;
+            right: inherit;
+            margin: 0 auto;
+        }
+      }
+    &__text, &__author {
+        font-size: 22px;
+        letter-spacing: 5px;
+        font-weight: 300;
+    }
+   
+}
+.slick-next-two, .slick-prev-two{
+    position: absolute;
+    font-size: 45px;
+    z-index: 9;
+    color: $baseColor;
+    display: flex;
+    left: 45%;   
+    justify-content: center;
+    bottom: 0px;
+    padding: 20px 30px;
+    border: 1px solid $baseColor;
+    @include _375{
+        position: absolute;
+        left: 20%;
+    }
+
+}
+.slick-next-two{
+    margin-right: 100px;
+    transform: rotate(180deg);
+}
+.slick-prev-two{
+    margin-left: 100px;
+    margin-right: -5px;
+    transform: rotate(180deg);
+}
