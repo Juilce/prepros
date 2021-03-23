@@ -6,7 +6,19 @@
     margin: 0 auto;
     @include _1200{
         width: inherit;
-
+        margin-bottom: 600px;
+    }
+    @include _768{
+        width: inherit;
+        margin-bottom: 100px;
+    }
+    @include _701{
+        width: inherit;
+        margin-bottom: 400px;
+    }
+    @include _510{
+        width: inherit;
+        margin-bottom: 200px;
     }
     &__logo{
         width: 690px;
@@ -146,7 +158,6 @@
             max-width: 950px;
             display: flex;
             flex-direction: column;
-            margin-bottom: 300px;
         }
         @include _992{
             max-width: 750px;
@@ -203,13 +214,14 @@
             margin-top: 10px;
             margin: 0 auto;
             margin-bottom: 300px;
+
+            
         }
         @include _510{
             width: inherit;
             height: auto;
             max-width: 300px;
             margin: 0 auto;
-            margin-bottom: 300px;
         }
     }
     &__image1{
