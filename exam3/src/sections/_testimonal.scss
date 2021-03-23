@@ -32,7 +32,7 @@
         display: flex;
         justify-content: center; 
         left: 48%;
-        @include _768{
+        @include _992{
             top: 100px;
         }
         

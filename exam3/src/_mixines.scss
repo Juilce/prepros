@@ -3,13 +3,18 @@
       @content;
     }
   }
-  @mixin _500{
+  @mixin _510{
     @media screen and (max-width: 500px) {
       @content;
     }
   }
   @mixin _768{
     @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin _701{
+    @media screen and (max-width: 701px) {
       @content;
     }
   }

@@ -10,19 +10,21 @@
         height: 70px;
         margin: 0 auto;
         background: $titleColor;
-        @include _375{
+        @include _510{
             width: inherit;
         }
         
       }
+    
       &__input {
         outline: none;
         border: 1px solid $btnColor;
         background: transparent;
-      }
-      &__input {
         width: 100%;
         height: 70px;
+        @include _510{
+            width: 98%;
+        }
       }
       &__btn {
         border: none;
@@ -47,7 +49,7 @@
         @include _1200{
             width: inherit;
         }
-        @include _500{
+        @include _510{
             display: flex;
             flex-direction: column;
             margin: 0 auto;
@@ -62,6 +64,9 @@
         margin: 0 auto;
         margin-top: 200px;
         border-top: 1px solid $btnColor;
+        @include _510{
+            width: inherit;
+        }
     }
     &__box2{
         width: 190px;
@@ -69,7 +74,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @include _500{
+        @include _510{
             height: 150px;
             margin: 0 auto;
             margin-top: 100px;
@@ -81,7 +86,7 @@
         margin-top: 160px;
         font-size: 60px;
         letter-spacing: 3px;
-        @include _500{
+        @include _510{
             margin: 0 auto;
         }
         
@@ -120,7 +125,7 @@
             margin-top: 40px;
             border-color: $btnColor;
         }
-        @include _500{
+        @include _510{
             display: none;
         }
     }
